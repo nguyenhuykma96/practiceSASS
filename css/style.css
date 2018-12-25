@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html body {
+  color: #111111;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%; }
+
+.myNavBar {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  z-index: 3;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal; }
+  .myNavBar.headerClass nav .navbar-brand img {
+    width: 80px; }
+  .myNavBar.headerClass nav .navbar-collapse a.nav-link {
+    padding: 27px 18px; }
+  .myNavBar .navbar .navbar-brand img {
+    width: 100px; }
+  .myNavBar .navbar .navbar-collapse {
+    justify-content: flex-end !important; }
+    .myNavBar .navbar .navbar-collapse ul li {
+      position: relative;
+      display: block; }
+      .myNavBar .navbar .navbar-collapse ul li .nav-link {
+        padding: 36px 18px;
+        letter-spacing: 0.5px;
+        color: #FFFFFF; }
+    .myNavBar .navbar .navbar-collapse ul li:nth-child(7) {
+      position: relative; }
+      .myNavBar .navbar .navbar-collapse ul li:nth-child(7)::after {
+        content: '';
+        height: 30%;
+        width: 2px;
+        position: absolute;
+        top: 35%;
+        right: 0;
+        background-color: #FFFFFF; }
+    .myNavBar .navbar .navbar-collapse ul .active {
+      color: #DFB65E !important; }
+    .myNavBar .navbar .navbar-collapse ul li:hover a {
+      color: #DFB65E; }
+  @media screen and (max-width: 992px) {
+    .myNavBar .navbar .navbar-brand img {
+      width: 80px; }
+    .myNavBar .navbar .navbar-collapse {
+      background-color: #FFFFFF; }
+      .myNavBar .navbar .navbar-collapse ul li .nav-link {
+        padding: 20px 35px;
+        color: #191919;
+        font-size: 13px;
+        font-weight: bold; }
+        .myNavBar .navbar .navbar-collapse ul li .nav-link span {
+          position: absolute;
+          top: 0%;
+          right: 0%;
+          font-size: 22px;
+          width: 60px;
+          height: 45px;
+          text-align: center;
+          border-left: solid 1px #f5f5f5;
+          line-height: 43px; } }
+  @media screen and (max-width: 768px) {
+    .myNavBar .navbar .navbar-brand img {
+      width: 46px; } }
+
+section.banner {
+  background-image: url("../img/banner/index-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  section.banner .banner_content {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    z-index: 2;
+    color: white; }
+    section.banner .banner_content h1 {
+      color: #FFFFFF;
+      font-size: 60px;
+      font-weight: 300;
+      letter-spacing: 5px; }
+    section.banner .banner_content h3 {
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: normal;
+      letter-spacing: 6px; }
+
+.myNavBar nav .navbar-collapse ul li .dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF; }
+  .myNavBar nav .navbar-collapse ul li .dropdown_content ul.submenu li {
+    position: relative; }
+    .myNavBar nav .navbar-collapse ul li .dropdown_content ul.submenu li a.dropdown_item {
+      position: relative;
+      text-decoration: none;
+      color: black !important;
+      display: block;
+      padding: 10px 15px; }
+      .myNavBar nav .navbar-collapse ul li .dropdown_content ul.submenu li a.dropdown_item span {
+        position: absolute;
+        top: 25%;
+        right: 5%; }
+    .myNavBar nav .navbar-collapse ul li .dropdown_content ul.submenu li:hover {
+      background-color: #DFB65E; }
+      .myNavBar nav .navbar-collapse ul li .dropdown_content ul.submenu li:hover ul.subsubmenu {
+        display: block; }
+    .myNavBar nav .navbar-collapse ul li .dropdown_content ul.submenu li ul.subsubmenu {
+      display: none;
+      min-width: 190px;
+      border: 1px solid black;
+      position: absolute;
+      top: -1px;
+      right: -101%;
+      background-color: #FFFFFF; }
+      .myNavBar nav .navbar-collapse ul li .dropdown_content ul.submenu li ul.subsubmenu li {
+        padding: 10px 15px; }
+        .myNavBar nav .navbar-collapse ul li .dropdown_content ul.submenu li ul.subsubmenu li a {
+          text-decoration: none;
+          color: black !important; }
+.myNavBar nav .navbar-collapse ul li:hover .dropdown_content {
+  display: block;
+  min-width: 190px;
+  border: 1px solid black; }
+.myNavBar nav .navbar-collapse ul li.header_cart:hover .header_products {
+  display: block !important; }
+.myNavBar nav .navbar-collapse ul li.header_cart {
+  position: relative; }
+  .myNavBar nav .navbar-collapse ul li.header_cart .header_products {
+    border: 1px solid black;
+    background-color: #FFFFFF;
+    color: black;
+    min-width: 400px;
+    padding: 15px;
+    position: absolute;
+    top: 90px;
+    right: -70px; }
+    .myNavBar nav .navbar-collapse ul li.header_cart .header_products table tbody {
+      width: 100% !important; }
+      .myNavBar nav .navbar-collapse ul li.header_cart .header_products table tbody tr {
+        border-bottom: none;
+        line-height: 60px; }
+        .myNavBar nav .navbar-collapse ul li.header_cart .header_products table tbody tr td {
+          border-top: none; }
+          .myNavBar nav .navbar-collapse ul li.header_cart .header_products table tbody tr td a.close img {
+            width: 10px;
+            height: 10px;
+            margin-top: 25px; }
+          .myNavBar nav .navbar-collapse ul li.header_cart .header_products table tbody tr td a {
+            color: black; }
+            .myNavBar nav .navbar-collapse ul li.header_cart .header_products table tbody tr td a img {
+              width: 40px;
+              height: 60px; }
+    .myNavBar nav .navbar-collapse ul li.header_cart .header_products .total_cart {
+      display: block;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      padding-top: 15px;
+      text-align: right; }
+      .myNavBar nav .navbar-collapse ul li.header_cart .header_products .total_cart ul li {
+        display: block; }
+        .myNavBar nav .navbar-collapse ul li.header_cart .header_products .total_cart ul li span {
+          display: inline-block;
+          width: 100px;
+          text-align: right;
+          font-weight: 600; }
+    .myNavBar nav .navbar-collapse ul li.header_cart .header_products .cart_btn {
+      padding-top: 20px;
+      text-decoration: none; }
+      .myNavBar nav .navbar-collapse ul li.header_cart .header_products .cart_btn a {
+        color: #FFFFFF;
+        padding: 10px 20px;
+        font-weight: 600;
+        transition: color 0.5s, background 0.5s; }
+      .myNavBar nav .navbar-collapse ul li.header_cart .header_products .cart_btn a.btn_theme_color {
+        background-color: #DFB65E;
+        margin-right: 5px; }
+        .myNavBar nav .navbar-collapse ul li.header_cart .header_products .cart_btn a.btn_theme_color:hover {
+          background-color: black;
+          text-decoration: none; }
+      .myNavBar nav .navbar-collapse ul li.header_cart .header_products .cart_btn a.btn_dark_solid {
+        background-color: black; }
+        .myNavBar nav .navbar-collapse ul li.header_cart .header_products .cart_btn a.btn_dark_solid:hover {
+          background-color: #DFB65E;
+          text-decoration: none; }
+.myNavBar nav .navbar-collapse ul li.menu_search .btn_search {
+  display: none;
+  border: 1px solid black;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: -255px;
+  bottom: -79px;
+  padding: 15px;
+  min-width: 350px; }
+  .myNavBar nav .navbar-collapse ul li.menu_search .btn_search form {
+    padding: 5px 5px; }
+    .myNavBar nav .navbar-collapse ul li.menu_search .btn_search form input.input_search {
+      border-radius: 0;
+      border: 1px solid #e5e5e5;
+      width: 100%;
+      font-size: 14px;
+      height: auto; }
+      .myNavBar nav .navbar-collapse ul li.menu_search .btn_search form input.input_search:focus {
+        border: 1px solid black;
+        box-shadow: none; }
+    .myNavBar nav .navbar-collapse ul li.menu_search .btn_search form:focus {
+      border-color: transparent !important; }
+.myNavBar nav .navbar-collapse ul li.menu_search:hover .btn_search {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */

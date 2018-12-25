@@ -1,0 +1,183 @@
+.myNavBar{
+    nav{
+        .navbar-collapse{
+            ul{
+                li{
+                    .dropdown_content{
+                        display: none;
+                        position: absolute;
+                        background-color: $color-white-0;
+                        ul.submenu{
+                            li{
+                                position: relative;
+                                a.dropdown_item{
+                                    position: relative;
+                                    text-decoration: none;
+                                    color: black !important;
+                                    display: block;
+                                    padding: $pd-1 $pd-2;
+                                    span{
+                                        position: absolute;
+                                        top: 25%;
+                                        right: 5%;
+                                    }
+                                }
+                                &:hover  {
+                                    background-color: $color-yellow-0;
+                                    ul.subsubmenu{
+                                        display: block;
+                                    }
+                                }
+                                ul.subsubmenu{
+                                    display: none;
+                                    min-width: 190px;
+                                    border: 1px solid black;
+                                    position: absolute;
+                                    top: -1px;
+                                    right: -101%;
+                                    background-color: $color-white-0;
+                                    li{
+                                        padding: $pd-1 $pd-2;
+                                        a{
+                                            text-decoration: none;
+                                            color: black !important;
+                                        }
+                                    }
+                                }
+                            }    
+                        }
+                    }
+                    &:hover{
+                        .dropdown_content{
+                            display: block;
+                            min-width: 190px;
+                            border: 1px solid black;
+                        }
+                    }
+                }
+                // cart phan header
+                li.header_cart:hover{
+                    .header_products{
+                        display: block !important;
+                    }      
+                }
+                li.header_cart{
+                    position: relative;
+                    .header_products{
+                        border: 1px solid black;
+                        background-color: $color-white-0;
+                        color: black;
+                        min-width: 400px;
+                        padding: 15px;
+                        position: absolute;
+                        top: 90px;
+                        right: -70px;
+                        table{
+                            tbody{
+                                width: 100% !important;
+                                tr{
+                                    border-bottom: none;
+                                    line-height: 60px;
+                                    td{
+                                        border-top: none; 
+                                        a.close{
+                                            img{
+                                                width: 10px;
+                                                height: 10px;
+                                                margin-top: 25px;
+                                            }
+                                        }
+                                        a{
+                                            color: black;
+                                            img{
+                                                width: 40px;
+                                                height: 60px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .total_cart{
+                            display: block;
+                            border-top: 1px solid rgba(0, 0, 0, .2);
+                            padding-top: 15px;
+                            text-align: right;
+                            ul{
+                               li{
+                                   display: block;
+                                   span{
+                                       display: inline-block;
+                                       width: 100px;
+                                       text-align: right;
+                                       font-weight: $fw-bold-0;
+                                   }
+                               }
+                            }
+                        }
+                        .cart_btn{
+                            padding-top: 20px;
+                            text-decoration: none;
+                            a{
+                                color: $color-white-0;
+                                padding: 10px 20px;
+                                font-weight: $fw-bold-0;
+                                transition: color 0.5s, background 0.5s;
+                            }
+                            a.btn_theme_color{
+                                background-color: $color-yellow-0;
+                                margin-right: 5px;
+                                &:hover{
+                                    background-color: black;
+                                    text-decoration: none;
+                                }
+                            }
+                            a.btn_dark_solid{
+                                background-color: black;
+                                &:hover{
+                                    background-color: $color-yellow-0;
+                                    text-decoration: none;
+                                }
+                            }    
+                        }
+                    }    
+                }
+                // nut search header
+                li.menu_search{
+                    .btn_search{
+                        display: none;
+                        border: 1px solid black;
+                        background-color: $color-white-0;
+                        position: absolute;
+                        left: -255px;;
+                        bottom: -79px;
+                        padding: 15px;
+                        min-width: 350px;
+                        form{
+                            padding: 5px 5px ;
+                            input.input_search{
+                                border-radius: 0;
+                                border: 1px solid #e5e5e5;
+                                width: 100%;
+                                font-size: $fs-0 - 1;
+                                height: auto;
+                                &:focus{
+                                    border: 1px solid black;
+                                    box-shadow: none;
+                                }
+                            }
+                            &:focus{
+                                border-color: transparent !important;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .btn_search{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.myNavBar{
+    position: fixed;
+    background: $color-gray-0;
+    text-transform: uppercase;
+    z-index: 3;
+    &.headerClass{
+        nav{
+            .navbar-brand{
+                img{
+                    width: 80px;
+                }
+            }
+            .navbar-collapse{
+                a.nav-link {
+                    padding: 27px 18px;
+                } 
+            }
+        }
+    }
+    @include text($color-white-0, $fs-0 - 3, $fw-normal); 
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 100px;
+            }
+        }
+        .navbar-collapse{
+            justify-content: flex-end !important;
+            ul{
+                li{
+                    position: relative;
+                    display: block;
+                    .nav-link{
+                        padding: 36px $fs-0 + 3 ;
+                        letter-spacing: 0.5px;
+                        color: $color-white-0 ;
+                    }
+                }
+                li:nth-child(7){
+                    position: relative;
+                    &::after{
+                        content: '';
+                        height: 30%;
+                        width: 2px;
+                        position: absolute;
+                        top: 35%;
+                        right: 0;
+                        background-color: $color-white-0;
+                    }
+                }
+                .active{
+                    color: $color-yellow-0 !important;
+                }
+                li:hover a{
+                    color: $color-yellow-0; 
+                }
+            }
+        }
+    }
+    @include respond-to('large'){
+        .navbar{
+            .navbar-brand{
+                img{
+                    width: 80px;
+                }
+            }
+            //buton menu
+            .button_menu{
+                span{
+                    
+                }
+            }
+            .navbar-collapse{
+                background-color: $color-white-0;
+                ul{
+                    li{
+                        .nav-link{
+                            padding: 20px 35px;
+                            @include text( $color-black-0, $fs-1, $fw-bold);
+                            span{
+                                position: absolute;
+                                top: 0%;
+                                right: 0%;
+                                font-size: 22px;
+                                width: 60px;
+                                height: 45px;
+                                text-align: center;
+                                border-left: solid 1px #f5f5f5;
+                                line-height: 43px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond-to('medium'){
+        .navbar{
+            .navbar-brand{
+                img{
+                    width: 46px;
+                }
+            }
+        }
+    }
+}
