@@ -1,1 +1,37 @@
 // Kế thừa từ 1 class nào đó 
+
+
+// title section
+.intro{
+    .intro_description{
+        h2{
+            @include text2($color-black-0, $fs-3, $fw-normal, $ls-0);
+            text-align: center;
+            position: relative;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: -2px;
+                left: 50%;
+                right: 50%;
+                width: 10%;
+                height: 2px;
+                background: #595959;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+            }
+        }
+        p{
+            width: 60%;
+            margin: 0 auto;
+            line-height: 25px;
+            text-align: center;
+            @include text($color-text, $fs-0, $fw-normal);
+        }
+    }
+}

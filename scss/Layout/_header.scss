@@ -17,7 +17,7 @@
             }
         }
     }
-    @include text($color-white-0, $fs-0 - 3, $fw-normal); 
+    @include text($color-white-0, $fs-0 - 2, $fw-normal); 
     .navbar{
         .navbar-brand{
             img{

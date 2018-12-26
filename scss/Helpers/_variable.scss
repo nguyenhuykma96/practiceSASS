@@ -11,7 +11,8 @@ $color-gray-3: #cacbcc;
 $color-gray-4: #686f7a;
 $color-gray-5:#F7F8FA;
 $color-black-light:#505763;
-$color-white-cream:#f2f3f5;
+$color-text:#7e7e7e; // color text
+$color-title:#333333 ;//color title
 $color-black-dark: rgba(20,23,28,.1);
 $color-yellow: #F4C150;
 $color-blue:#007791;
@@ -25,7 +26,7 @@ $fs-3: 24px;
 $fs-4: 40px;
 $fs-5: 60px;
 
-//variable margin
+//variable margin0
 $mg-0: 2px;
 $mg-1: 10px;
 $mg-2: 25px;
@@ -50,6 +51,11 @@ $fw-bold-0: 600;
 $fw-bold-1: 700;
 $fw-bold: bold;
 
+
+// letter-spacing
+$ls-0 : 2px;
+$ls-1 : 5px;
+$ls-2 : 1px;
 
 //break points (responsive)
 $breakpoints:(
