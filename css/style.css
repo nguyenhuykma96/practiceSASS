@@ -11,37 +11,42 @@ html body {
   height: 100%;
   width: 100%; }
 
-.intro .intro_description h2 {
-  color: #191919;
-  font-size: 24px;
-  font-weight: normal;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  margin-bottom: 20px;
-  padding-bottom: 10px; }
-  .intro .intro_description h2::after {
-    position: absolute;
-    content: "";
-    bottom: -2px;
-    left: 50%;
-    right: 50%;
-    width: 10%;
-    height: 2px;
-    background: #595959;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%); }
-.intro .intro_description p {
-  width: 60%;
-  margin: 0 auto;
-  line-height: 25px;
-  text-align: center;
-  color: #7e7e7e;
-  font-size: 15px;
-  font-weight: normal; }
+.intro {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .intro .intro_description, .intro .skills .skills_items .skills_item_tow .skills_txt, .skills .skills_items .skills_item_tow .intro .skills_txt {
+    margin-bottom: 80px; }
+    .intro .intro_description h2, .intro .skills .skills_items .skills_item_tow .skills_txt h2, .skills .skills_items .skills_item_tow .intro .skills_txt h2 {
+      color: #191919;
+      font-size: 24px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-align: center;
+      position: relative;
+      margin-bottom: 20px;
+      padding-bottom: 10px; }
+      .intro .intro_description h2::after, .intro .skills .skills_items .skills_item_tow .skills_txt h2::after, .skills .skills_items .skills_item_tow .intro .skills_txt h2::after {
+        position: absolute;
+        content: "";
+        bottom: -2px;
+        left: 50%;
+        right: 50%;
+        width: 10%;
+        height: 2px;
+        background: #595959;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%); }
+    .intro .intro_description p, .intro .skills .skills_items .skills_item_tow .skills_txt p, .skills .skills_items .skills_item_tow .intro .skills_txt p {
+      width: 60%;
+      margin: 0 auto;
+      line-height: 25px;
+      text-align: center;
+      color: #7e7e7e;
+      font-size: 15px;
+      font-weight: normal; }
 
 .myNavBar {
   position: fixed;
@@ -140,23 +145,66 @@ section.banner {
       font-weight: normal;
       letter-spacing: 6px; }
 
-.intro .intro_items .intro_item .intro_content {
-  padding: 30px;
-  border: 1px solid #e9e9e9;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+.intro .intro_items .intro_item {
   position: relative; }
-  .intro .intro_items .intro_item .intro_content h4 {
-    color: #333333;
-    font-size: 18px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    margin: 30px 0 20px 0; }
-  .intro .intro_items .intro_item .intro_content p {
-    color: #7e7e7e; }
+  .intro .intro_items .intro_item .intro_icon {
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    background: #222;
+    box-shadow: 0 0 0 10px #fff;
+    line-height: 60px;
+    z-index: 3; }
+    .intro .intro_items .intro_item .intro_icon i {
+      color: #FFFFFF;
+      font-size: 30px;
+      line-height: 60px; }
+  .intro .intro_items .intro_item .intro_content {
+    padding: 30px;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    position: relative; }
+    .intro .intro_items .intro_item .intro_content h4 {
+      color: #333333;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 1px;
+      margin: 30px 0 20px 0; }
+    .intro .intro_items .intro_item .intro_content p {
+      color: #7e7e7e; }
+
+@media screen and (max-width: 768px) {
+  .intro_sm {
+    margin-bottom: 80px; } }
+.skills {
+  background-image: url("./../img/intro/4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  position: relative; }
+  .skills .skills_overlay {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); }
+  .skills .skills_items .skills_item_one {
+    align-items: center; }
+    .skills .skills_items .skills_item_one h2 {
+      color: #FFFFFF;
+      font-size: 24px;
+      font-weight: normal;
+      letter-spacing: 5px; }
 
 .myNavBar nav .navbar-collapse ul li .dropdown_content {
   display: none;

@@ -1,0 +1,27 @@
+.skills{
+    @include bg-image(url("./../img/intro/4.jpg"), cover, center, no-repeat);
+    background-attachment: fixed;   
+    height: 100%;
+    position: relative;
+    .skills_overlay {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .5);
+    }
+    .skills_items{
+        .skills_item_one{
+            align-items: center;
+            h2{
+                @include text2($color-white-0, $fs-3, $fw-normal, $ls-1);
+            }
+        }
+        .skills_item_tow{
+            .skills_txt{
+                @extend .intro_description ;
+            }
+        }
+    }
+}

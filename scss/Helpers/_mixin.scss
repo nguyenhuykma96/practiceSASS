@@ -9,6 +9,12 @@
     font-weight: $fw;
     letter-spacing: $letter;
 }
+@mixin bg-image($bg-image, $bg-size, $bg-possiton, $bg-repeat){
+    background-image: $bg-image;
+    background-size: $bg-size;
+    background-position: $bg-possiton;
+    background-repeat: $bg-repeat;
+}
 @mixin respond-to($breakpoint) {
     @if map-has-key($map: $breakpoints , $key: $breakpoint){
         $value: map-get($map: $breakpoints, $key: $breakpoint );

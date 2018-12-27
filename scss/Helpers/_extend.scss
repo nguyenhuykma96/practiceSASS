@@ -3,7 +3,10 @@
 
 // title section
 .intro{
+    padding-top: 100px;
+    padding-bottom: 100px;
     .intro_description{
+        margin-bottom: 80px;
         h2{
             @include text2($color-black-0, $fs-3, $fw-normal, $ls-0);
             text-align: center;
